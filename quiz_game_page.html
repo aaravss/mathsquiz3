@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="quiz_game.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+<audio id="click" src="click_audio.mp3"></audio>
+<audio id="wrong" src="wrong.mp3"></audio>
+<audio id="right" src="right.mp3"></audio>
+    <title>The Math Quiz Game!</title>
+</head>
+<body>
+
+<h4 style="color: white;" id="player1_name"></h4><span style="color: white;" id="player1_score"></span>
+<br>
+<h4 style="color: white;" id="player2_name"></h4><span style="color: white;" id="player2_score"></span>
+<div class="container">
+<center>
+<h2 style="color: white;background-color:cornflowerblue;width: 40%;
+border-radius: 20px;
+padding: 10px;
+font-size: 33px;">The Math Quiz Game!</h2>
+<br><br>
+<div style="color: white; background-color:lightblue;width:40%;padding: 1px;border-radius: 20px;">
+<h3>Question Turn:</h3><span><h3 id="player_question"></h3></span>
+<br>
+<h3>Answer Turn:</h3><span><h3 id="player_answer"></h3></span>
+</div>
+
+<br><br>
+
+<div id="output" class="col-lg-6">
+</div>
+<br>
+<h3 style="color: white;background-color: cornflowerblue;width: 20%;
+border-radius: 10px;">Number 1:</h3>
+<br>
+<input id="number1_input" class="form-control" type="number" placeholder="Enter a number here...">
+<br>
+<h3 style="color: white;background-color: cornflowerblue;width: 20%;
+border-radius: 10px;">Number 2:</h3>
+<br>
+<input id="number2_input" class="form-control" type="number" placeholder="Enter a number here...">
+<br>
+<button onclick="send();" class="btn btn-success" style="width:30%">Send!</button>
+<br><br><br>
+</center>
+</div>
+<script src="quiz_game_page.js"></script>
+</body>
+</html>
